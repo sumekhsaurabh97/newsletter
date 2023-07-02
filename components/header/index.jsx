@@ -1,6 +1,7 @@
 import React from "react";
 import SearchSharpIcon from "@mui/icons-material/SearchSharp";
 import MenuIcon from "@mui/icons-material/Menu";
+import Link from "next/link";
 
 import styles from "./styles/header.module.scss";
 
@@ -10,7 +11,9 @@ export default function Header() {
       className="mx-4 mt-2 d-flex justify-content-between"
       style={{ height: "40px" }}
     >
-      <p className={styles.header_left}>𝕹𝖊𝖜𝖘𝖑𝖊𝖙𝖙𝖊𝖗</p>
+      <Link href="/" style={{ textDecoration: "none" }}>
+        <p className={styles.header_left}>𝕹𝖊𝖜𝖘𝖑𝖊𝖙𝖙𝖊𝖗</p>
+      </Link>
       {/* <p>ᑎEᗯᔕᒪETTEᖇ</p> */}
       <div className={styles.header_right}>
         <SearchSharpIcon style={{ cursor: "pointer" }} />
