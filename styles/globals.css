@@ -1,3 +1,4 @@
+/* @import "./_font.scss"; */
 html,
 body {
   padding: 0;
@@ -6,21 +7,16 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
+body {
+  background-color: rgb(241, 124, 114) !important;
+}
+
 a {
-  color: inherit;
-  text-decoration: none;
+  /* color: inherit;
+  text-decoration: none !important;
+  color: white !important; */
 }
 
 * {
   box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
 }

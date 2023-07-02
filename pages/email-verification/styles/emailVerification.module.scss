@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=McLaren&family=Merriweather:ital,wght@0,400;1,400;1,900&family=PT+Sans&family=PT+Sans+Caption:wght@700&family=Poppins:ital,wght@0,100;0,200;1,100&family=Roboto:ital,wght@0,300;1,900&display=swap");
+@import "../../../styles//breakpoints";
+
+.logIn_container {
+  background-color: #f17c72;
+  height: 100vh;
+}
+.logIn_card {
+  width: 463px;
+  border-radius: 7px;
+  background-color: white;
+  a {
+    color: #555555;
+  }
+}
+.heading {
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 28px;
+  width: 85%;
+  //   font-family: "PT Sans", sans-serif;
+  letter-spacing: 0.2px;
+}
+.inputBox {
+  border-radius: 7px;
+  border: 1px solid #808080;
+  height: 30px;
+}
+
+.inputBox::placeholder {
+  color: #b4b4b4;
+  font-family: "PT Sans", sans-serif !important;
+  font-size: 15px !important;
+  font-weight: 500;
+}
+.btn {
+  border: none;
+  height: 30px;
+  border-radius: 7px;
+  background-color: #f3a124;
+  color: black;
+}
+.past_example {
+  color: #555555;
+}
+.text {
+  font-weight: 500;
+  color: #000000;
+}
+@media (min-width: 280px) and (max-width: $mobile-small) {
+  .logIn_card {
+    padding-left: 25px !important;
+    padding-right: 10px !important;
+  }
+  .heading {
+    width: 100%;
+  }
+  .text {
+    margin: 30px 0px 10px 0px !important;
+  }
+  .user_referral_code {
+    margin-top: 0px !important;
+  }
+}
