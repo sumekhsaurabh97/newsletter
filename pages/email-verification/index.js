@@ -2,9 +2,8 @@ import React from "react";
 import { useState } from "react";
 import Link from "next/link";
 import { Form, Input, Button } from "antd";
-import axios from "axios";
 
-import Hello from "../../components/popup";
+import PopUp from "../../components/popup";
 import styles from "./styles/emailVerification.module.scss";
 
 export default function EmailVerification() {
@@ -58,7 +57,7 @@ export default function EmailVerification() {
     setEmailInputCard(!emailInputCard);
   };
 
-  const postRequest = () => {
+  const postRequest = async () => {
     let option = {
       method: "POST",
       Headers: { "content-type": "application/json" },
@@ -68,7 +67,7 @@ export default function EmailVerification() {
         user_referral_code: "string",
       }),
     };
-    fetch("https://jsonplaceholder.typicode.com/posts", option)
+    await fetch("https://jsonplaceholder.typicode.com/posts", option)
       .then((response) => response.json())
       .then((json) => console.log(json));
     console.log(userEmail);
@@ -131,7 +130,7 @@ export default function EmailVerification() {
           </p>
         </div>
       ) : (
-        <Hello />
+        <PopUp/>
       )}
     </div>
   );
