@@ -1,10 +1,13 @@
 import React from "react";
 import { useState } from "react";
-import { useParams } from "next/navigation";
+import { useRouter } from "next/router";
 
 import styles from "./styles/loginIn.module.scss";
 
-export default function LogIn() {
+export default function LogIn({ query }) {
+  const router = useRouter();
+  const id = router.query.id;
+
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [designation, setDesignation] = useState("");
@@ -24,7 +27,7 @@ export default function LogIn() {
       method: "POST",
       Headers: { "content-type": "application/json" },
       body: JSON.stringify({
-        user_id: "string",
+        user_id: id,
         name: name,
         company: company,
         designation: designation,
