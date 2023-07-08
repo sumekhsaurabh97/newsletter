@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Form, Input, Button } from "antd";
 
 import PopUp from "../../components/popup";
+
 import styles from "./styles/emailVerification.module.scss";
 
 export default function EmailVerification() {
@@ -13,43 +14,6 @@ export default function EmailVerification() {
   const handleChange = (event) => {
     setUserEmail(event.target.value);
   };
-
-  // const submit = (values) => {
-  //   console.log(values);
-  //   setUserEmail(values);
-  //   form.resetFields();
-  //   post();
-  // };
-
-  // function post() {
-  //   const email = userEmail.email;
-  //   const category = "dummy1";
-  //   const user_referral_code = "dummy2";
-  //   let obj = {
-  //     email: userEmail.email,
-  //     category: "dummy1",
-  //     user_referral_code: "dummy2",
-  //   };
-  //   let xyz = JSON.stringify(obj);
-  //   axios
-  //     .post(
-  //       "https://newsletter12.pythonanywhere.com/api/send_link",
-  //       xyz
-  //       {
-  //         email,
-  //         category,
-  //         user_referral_code,
-
-  //       }
-  //     )
-  //     .then((response) => {
-  //       console.log(response);
-  //     })
-  //     .catch((error) => {
-  //       console.log(error);
-  //     });
-  // }
-
   const submit = (values) => {
     setUserEmail(values);
     form.resetFields();

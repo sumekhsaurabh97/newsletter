@@ -2,12 +2,15 @@ import React from "react";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
+import ThanksPage from "../../../components/thanksPage";
+
 import styles from "./styles/loginIn.module.scss";
 
 export default function LogIn({ query }) {
   const router = useRouter();
   const id = router.query.id;
 
+  const [form, setForm] = useState(true);
   const [name, setName] = useState("");
   const [company, setCompany] = useState("");
   const [designation, setDesignation] = useState("");
@@ -16,10 +19,7 @@ export default function LogIn({ query }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     postRequest();
-    setName("");
-    setCompany("");
-    setDesignation("");
-    setPassward("");
+    setForm(!form);
   };
 
   const postRequest = async () => {
@@ -43,68 +43,72 @@ export default function LogIn({ query }) {
     <div
       className={`d-flex justify-content-center align-items-center ${styles.logIn_container}`}
     >
-      <div className={`py-5 ps-4 pe-5 m-3 ${styles.logIn_card}`}>
-        <p>
-          🎈 Congratulations on joining the exclusive club of verified email
-          warriors!
-        </p>
-        <p>
-          Your messages now carry the mighty badge of authenticity, making you a
-          true email superhero in the digital realm. 💪📧
-        </p>
-        <span>Complete Profile and Proceed</span>
-        <form action="" onSubmit={handleSubmit}>
-          <input
-            type="text"
-            name="name"
-            id=""
-            placeholder="Name"
-            required
-            className={`mt-3 ps-2  d-block ${styles.input_box}`}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
-            value={name}
-          />
-          <input
-            type="text"
-            name="company"
-            id=""
-            placeholder="Company"
-            required
-            className={`mt-3 ps-2 d-block ${styles.input_box}`}
-            onChange={(e) => {
-              setCompany(e.target.value);
-            }}
-            value={company}
-          />
-          <input
-            type="text"
-            name="designation"
-            id=""
-            placeholder="Designation"
-            className={`mt-3 ps-2 d-block ${styles.input_box}`}
-            value={designation}
-            required
-            onChange={(e) => {
-              setDesignation(e.target.value);
-            }}
-          />
-          <input
-            type="text"
-            name="passward"
-            id=""
-            placeholder="Passward"
-            required
-            className={`mt-3 ps-2 d-block ${styles.input_box}`}
-            onChange={(e) => {
-              setPassward(e.target.value);
-            }}
-            value={passward}
-          />
-          <button className={`mt-3`}>Let’s Get Started</button>
-        </form>
-      </div>
+      {form ? (
+        <div className={`py-5 ps-4 pe-5 m-3 ${styles.logIn_card}`}>
+          <p>
+            🎈 Congratulations on joining the exclusive club of verified email
+            warriors!
+          </p>
+          <p>
+            Your messages now carry the mighty badge of authenticity, making you
+            a true email superhero in the digital realm. 💪📧
+          </p>
+          <span>Complete Profile and Proceed</span>
+          <form action="" onSubmit={handleSubmit}>
+            <input
+              type="text"
+              name="name"
+              id=""
+              placeholder="Name"
+              required
+              className={`mt-3 ps-2  d-block ${styles.input_box}`}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+              value={name}
+            />
+            <input
+              type="text"
+              name="company"
+              id=""
+              placeholder="Company"
+              required
+              className={`mt-3 ps-2 d-block ${styles.input_box}`}
+              onChange={(e) => {
+                setCompany(e.target.value);
+              }}
+              value={company}
+            />
+            <input
+              type="text"
+              name="designation"
+              id=""
+              placeholder="Designation"
+              className={`mt-3 ps-2 d-block ${styles.input_box}`}
+              value={designation}
+              required
+              onChange={(e) => {
+                setDesignation(e.target.value);
+              }}
+            />
+            <input
+              type="text"
+              name="passward"
+              id=""
+              placeholder="Passward"
+              required
+              className={`mt-3 ps-2 d-block ${styles.input_box}`}
+              onChange={(e) => {
+                setPassward(e.target.value);
+              }}
+              value={passward}
+            />
+            <button className={`mt-3`}>Let’s Get Started</button>
+          </form>
+        </div>
+      ) : (
+        <ThanksPage />
+      )}
     </div>
   );
 }
