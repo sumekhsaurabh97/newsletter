@@ -8,14 +8,13 @@ import Header from "../../components/header";
 export default function Hero() {
   let handleClick = (event) => {
     let btnText = event.target.innerText;
-    let catogery = btnText.split(" ");
-    let catogeryName = catogery[catogery.length - 1];
-    console.log(catogeryName)
-
+    let category = btnText.split(" ");
+    let categoryName = category[category.length - 1];
+    
     Router.push({
       pathname: "/email-verification",
       query: {
-        catogeryName,
+        categoryName,
       },
     });
   };
@@ -41,9 +40,7 @@ export default function Hero() {
                 id="btn"
                 key={i}
               >
-                <button onClick={handleClick}>
-                  Start a Trial with {i}
-                </button>
+                <button onClick={handleClick}>Start a Trial with {i}</button>
               </Link>
             );
           })}
@@ -52,7 +49,7 @@ export default function Hero() {
             <video
               id="underline-video"
               width="100%"
-              autoplay="true"
+              autoPlay={true}
               defaultmuted=""
               playsinline=""
             >
