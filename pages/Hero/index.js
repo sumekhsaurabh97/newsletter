@@ -1,18 +1,16 @@
 import React from "react";
 import Link from "next/link";
-import { useRef } from "react";
 import Router from "next/router";
 
 import styles from "./styles/hero.module.scss";
 import Header from "../../components/header";
 
 export default function Hero() {
-  const btnCatogery = useRef();
-  console.log(btnCatogery.current);
   let handleClick = (event) => {
     let btnText = event.target.innerText;
     let catogery = btnText.split(" ");
     let catogeryName = catogery[catogery.length - 1];
+    console.log(catogeryName)
 
     Router.push({
       pathname: "/email-verification",
@@ -41,8 +39,9 @@ export default function Hero() {
                 href="./email-verification"
                 className="d-block mt-3"
                 id="btn"
+                key={i}
               >
-                <button ref={btnCatogery} onClick={handleClick}>
+                <button onClick={handleClick}>
                   Start a Trial with {i}
                 </button>
               </Link>

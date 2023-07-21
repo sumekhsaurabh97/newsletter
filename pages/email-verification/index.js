@@ -18,7 +18,6 @@ export default function EmailVerification() {
     query: { catogeryName },
   } = router;
   const props = { catogeryName };
-  console.log(props);
 
   const handleChange = (event) => {
     setUserEmail(event.target.value);
