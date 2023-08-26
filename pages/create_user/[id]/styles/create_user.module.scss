@@ -2,9 +2,8 @@
 @import "../../../../styles/breakpoints";
 
 .logIn_container {
-  // background-color: #f17c72;
   height: 100vh;
-  background-color: #F9F6EF;
+  background-color: #f9f6ef;
 }
 .logIn_card {
   width: 463px;
@@ -26,7 +25,6 @@
     border: none;
     height: 30px;
     border-radius: 7px;
-    // background-color: #f3a124;
     background-color: #fa5123;
     color: black;
     width: 50%;
@@ -44,8 +42,6 @@
 .input_box::placeholder {
   color: #b4b4b4;
   font-size: 16px !important;
-  // font-weight: 400;
-  // font-family: "Poppins", sans-serif;
 }
 @media (min-width: 280px) and (max-width: $mobile-small) {
   .logIn_card {

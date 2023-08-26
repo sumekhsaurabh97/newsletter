@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import axios from "axios";
 import { useState, useRef } from "react";
 
@@ -9,7 +8,7 @@ export default function InputBtn(props) {
   const [email, setEmail] = useState("");
   const emailref = useRef(null);
 
-  const collections_name= props.collections_name
+  const collections_name = props.collections_name;
 
   const handleChange = (e) => {
     setEmail(e.target.value);
@@ -17,7 +16,6 @@ export default function InputBtn(props) {
   const submitHandler = (e) => {
     e.preventDefault();
     props.linkSendedfunc(false);
-    // console.log(props.collections_name, email)
     setEmail("");
     postData();
   };

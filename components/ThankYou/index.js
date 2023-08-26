@@ -1,8 +1,17 @@
 import React from "react";
+import { useEffect } from "react";
+import { useRouter } from "next/router";
 
 import styles from "./styles/ThankYou.module.scss";
 
 export default function ThankYou() {
+  const router = useRouter();
+
+  useEffect(() => {
+    setTimeout(() => {
+      router.push("/refral");
+    }, 3000);
+  }, []);
   return (
     <div
       className={`d-flex justify-content-center align-items-center py-4 px-3`}

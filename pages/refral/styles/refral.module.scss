@@ -98,12 +98,12 @@
       width: 50%;
     }
     button {
-      padding: 10px 0px !important;;
+      padding: 10px 0px !important;
     }
   }
-  .desktop_screen{
+  .desktop_screen {
     height: 390px;
-    }
+  }
 }
 
 @media (min-width: $mobile-small) and (max-width: $mobile) {
@@ -128,57 +128,56 @@
       padding-top: 10px !important;
     }
   }
-  .social_media{
-    div{
-      padding:  1rem 1rem !important;
+  .social_media {
+    div {
+      padding: 1rem 1rem !important;
     }
   }
-  .desktop_screen{
-  height: 320px;
+  .desktop_screen {
+    height: 320px;
   }
 }
-@media (min-width: 280px) and (max-width: $mobile-small){
-  .refral_container{
+@media (min-width: 280px) and (max-width: $mobile-small) {
+  .refral_container {
     flex-direction: column;
-  
-  h3 {
-    font-size: 24px;
+
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .btn {
+      margin-top: 18px;
+    }
+    button {
+      padding: 8px 41px !important;
+      span {
+        padding: 0px !important;
+        font-size: 17px;
+      }
+    }
   }
-  p {
-    font-size: 16px;
+  .latest_issues_section {
+    p {
+      font-size: 14px;
+    }
   }
-  .btn{
-    margin-top: 18px;
-  }
-  button {
-    padding: 8px 41px !important;
+  .social_media {
+    div {
+      padding-right: 12px !important;
+      padding-left: 15px !important;
+      text-align: center;
+    }
     span {
       padding: 0px !important;
-      font-size: 17px;
+      font-size: 15px;
     }
   }
-}
-.latest_issues_section{
-  p{
-    font-size: 14px;
+  .load_more {
+    font-size: 21px;
   }
-}
-.social_media{
-  div{
-  padding-right: 12px !important;
-  padding-left: 15px !important;
-  text-align: center;
+  .desktop_screen {
+    height: 261px;
   }
-  span{
-    padding: 0px !important;
-    font-size: 15px;
-  }
-}
-.load_more{
-  font-size: 21px;
-}
-.desktop_screen{
-  height: 261px;
-  }
-
 }

@@ -45,15 +45,12 @@ export default function index() {
           setCount(response.data.data.count);
           setRemaining_time(response.data.data.remaining_time);
         },
-        (error) => {
-          // console.log(error);
-        }
+        (error) => {}
       );
   };
 
   const copyUrl = async () => {
     await navigator.clipboard.writeText(url);
-    alert(url);
   };
   return (
     <>
@@ -147,7 +144,9 @@ export default function index() {
           </div>
 
           <div className={`mt-5 pb-5 text-center ${styles.load_more}`}>
-          <Link href={""}><p>Load More Archive</p></Link>
+            <Link href={""}>
+              <p>Load More Archive</p>
+            </Link>
           </div>
         </div>
       </div>
