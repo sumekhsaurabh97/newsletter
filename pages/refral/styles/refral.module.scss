@@ -62,10 +62,8 @@
 }
 .social_media {
   border: 1px solid #a2a1a1;
-  // background-color: red;
   border-radius: 10px;
   margin-top: 51px !important;
-  // width: 50%;
   margin: auto;
 
   span {
@@ -89,7 +87,6 @@
 }
 @media (min-width: $mobile) and (max-width: $tablet) {
   .refral_container {
-    // column-gap: 30px !important;
     h3 {
       font-size: 21px;
     }
@@ -133,14 +130,6 @@
   }
   .social_media{
     div{
-      // padding-right: 0px !important;
-
-      // padding-right: 1rem !important;
-      // padding-left: 1rem !important;
-      // padding: 0px 1rem !important;
-      // padding-top: 1rem !important;
-      // padding-bottom: 1rem;
-
       padding:  1rem 1rem !important;
     }
   }
@@ -182,7 +171,6 @@
   }
   span{
     padding: 0px !important;
-    // padding-right: 7px !important;
     font-size: 15px;
   }
 }
