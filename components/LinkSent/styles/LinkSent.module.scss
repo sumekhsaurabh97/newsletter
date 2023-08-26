@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Hepta+Slab&family=McLaren&family=Merriweather:ital,wght@0,400;1,400;1,900&family=PT+Sans&family=PT+Sans+Caption:wght@700&family=Poppins:ital,wght@0,100;0,200;0,500;1,100&family=Roboto:ital,wght@0,300;1,900&display=swap");
+@import "../../../styles//breakpoints";
+
+.magicLink_container {
+  background-color: #f9f6ef;
+  height: 100vh;
+}
+.magicLink_popup {
+  width: 463px;
+  background-color: white;
+  border-radius: 5px;
+  p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media (min-width: 280px) and (max-width: $mobile-small) {
+  .magicLink_popup {
+    padding-left: 30px !important;
+    padding-right: 15px !important;
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+  .magicLink_popup {
+    width: auto;
+  }
+}

@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Hepta+Slab&family=McLaren&family=Merriweather:ital,wght@0,400;1,400;1,900&family=PT+Sans&family=PT+Sans+Caption:wght@700&family=Poppins:ital,wght@0,100;0,200;0,500;1,100&family=Roboto:ital,wght@0,300;1,900&display=swap");
+@import "../../../../styles/breakpoints";
+
+.logIn_container {
+  // background-color: #f17c72;
+  height: 100vh;
+  background-color: #F9F6EF;
+}
+.logIn_card {
+  width: 463px;
+  background-color: white;
+  border-radius: 7px;
+  p {
+    font-size: 19px;
+    line-height: 30px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+  }
+  span {
+    font-size: 16px;
+    font-weight: 400;
+    color: #555555;
+    font-family: "Poppins", sans-serif;
+  }
+  button {
+    border: none;
+    height: 30px;
+    border-radius: 7px;
+    // background-color: #f3a124;
+    background-color: #fa5123;
+    color: black;
+    width: 50%;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+  }
+}
+.input_box {
+  width: 50%;
+  border-radius: 7px;
+  border: 1px solid #808080;
+  height: 30px;
+}
+.input_box::placeholder {
+  color: #b4b4b4;
+  font-size: 16px !important;
+  // font-weight: 400;
+  // font-family: "Poppins", sans-serif;
+}
+@media (min-width: 280px) and (max-width: $mobile-small) {
+  .logIn_card {
+    padding-right: 10px !important;
+    p {
+      font-size: 17px;
+      line-height: 25px;
+    }
+    button {
+      width: 60%;
+    }
+  }
+  .input_box {
+    width: 60%;
+  }
+}

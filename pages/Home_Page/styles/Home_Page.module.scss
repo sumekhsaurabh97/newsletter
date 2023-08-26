@@ -1,0 +1,161 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/variable";
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Hepta+Slab&family=McLaren&family=Merriweather:ital,wght@0,400;1,400;1,900&family=PT+Sans&family=PT+Sans+Caption:wght@700&family=Poppins:ital,wght@0,100;0,200;0,500;1,100&family=Roboto:ital,wght@0,300;1,900&display=swap");
+
+.hero_section{
+  width: 66%;
+}
+.heading_style {
+  color: $color-back;
+  font-size: 48px;
+  line-height: 72px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.para_style {
+  color: $color-back;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+
+.section_heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.review_para {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  color: $color-back;
+  text-align: left;
+}
+
+.newsletter_collection h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+}
+
+.collection_card_content {
+  width: 30%;
+  margin: auto;
+  a{
+    color: $color-back ;
+    text-decoration: none;
+  }
+}
+
+.title {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+}
+.summary {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+.leaders_icon {
+  column-gap: 65px;
+  width: 76%;
+}
+.engage {
+  width: 82%;
+  padding-bottom: 100px !important;
+}
+
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .hero_section{
+    width: 90%;
+  }
+  .collection_card_content {
+    min-width: 48%;
+  }
+  .leaders_icon {
+    width: 100%;
+  }
+  .engage {
+    width: 100%;
+  }
+}
+
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .hero_section{
+    width: 100%;
+  }
+  .review_para {
+    font-size: 15px;
+    line-height: 25px;
+  }
+
+  .collection_card_content {
+    min-width: 48%;
+  }
+  .title {
+    margin: 10px 0px 7px 0px !important;
+  }
+  .summary {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .leaders_icon {
+    width: 100%;
+  }
+  .engage {
+    width: 100%;
+  }
+}
+
+@media (min-width: 280px) and (max-width: $mobile-small) {
+  .hero_section{
+    width: 100%;
+  }
+  .heading_style {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .para_style {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .reviewed {
+    flex-direction: column;
+  }
+  .review_para {
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .collection_card {
+    justify-content: center !important;
+  }
+  .collection_card_content {
+    min-width: 80%;
+  }
+  .collection_img {
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .title {
+    font-size: 18px;
+    margin: 10px 0px 10px 0px !important;
+  }
+  .summary {
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .leaders_icon { 
+    width: 100%;
+  }
+  .engage {
+    width: 100%;
+  }
+}

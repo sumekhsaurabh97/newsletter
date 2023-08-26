@@ -1,0 +1,196 @@
+@import "../../../styles/breakpoints";
+@import "../../../styles/variable";
+@import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Hepta+Slab&family=McLaren&family=Merriweather:ital,wght@0,400;1,400;1,900&family=PT+Sans&family=PT+Sans+Caption:wght@700&family=Poppins:ital,wght@0,100;0,200;0,500;1,100&family=Roboto:ital,wght@0,300;1,900&display=swap");
+
+.refral_container {
+  border: 1px solid #5e5e5e;
+  border-radius: 10px;
+  background-color: white;
+  p {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+    color: $color-back;
+  }
+  h3 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: $color-back;
+    text-align: center;
+  }
+  button {
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    background-color: $color-orange;
+    border: none;
+    border-radius: 5px;
+  }
+}
+.latest_issues_section {
+  h3 {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  p {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+.desktop_screen {
+  width: 100%;
+  height: 500px;
+  background-color: white;
+  border-radius: 5px;
+}
+.social_media {
+  border: 1px solid #a2a1a1;
+  // background-color: red;
+  border-radius: 10px;
+  margin-top: 51px !important;
+  // width: 50%;
+  margin: auto;
+
+  span {
+    padding-top: 2px;
+    font-family: "Poppins", sans-serif;
+  }
+}
+.load_more {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  color: #47b9f8;
+}
+
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .refral_container {
+    p {
+      font-size: 16px;
+    }
+  }
+}
+@media (min-width: $mobile) and (max-width: $tablet) {
+  .refral_container {
+    // column-gap: 30px !important;
+    h3 {
+      font-size: 21px;
+    }
+    p {
+      font-size: 16px;
+    }
+
+    .btn {
+      width: 50%;
+    }
+    button {
+      padding: 10px 0px !important;;
+    }
+  }
+  .desktop_screen{
+    height: 390px;
+    }
+}
+
+@media (min-width: $mobile-small) and (max-width: $mobile) {
+  .refral_container {
+    h3 {
+      font-size: 24px;
+    }
+    p {
+      font-size: 16px;
+    }
+    .btn {
+      width: 62%;
+    }
+    button {
+      padding: 8px 25px !important;
+      span {
+        padding: 0px !important;
+        font-size: 17px;
+      }
+    }
+    .remaining_days :last-child {
+      padding-top: 10px !important;
+    }
+  }
+  .social_media{
+    div{
+      // padding-right: 0px !important;
+
+      // padding-right: 1rem !important;
+      // padding-left: 1rem !important;
+      // padding: 0px 1rem !important;
+      // padding-top: 1rem !important;
+      // padding-bottom: 1rem;
+
+      padding:  1rem 1rem !important;
+    }
+  }
+  .desktop_screen{
+  height: 320px;
+  }
+}
+@media (min-width: 280px) and (max-width: $mobile-small){
+  .refral_container{
+    flex-direction: column;
+  
+  h3 {
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .btn{
+    margin-top: 18px;
+  }
+  button {
+    padding: 8px 41px !important;
+    span {
+      padding: 0px !important;
+      font-size: 17px;
+    }
+  }
+}
+.latest_issues_section{
+  p{
+    font-size: 14px;
+  }
+}
+.social_media{
+  div{
+  padding-right: 12px !important;
+  padding-left: 15px !important;
+  text-align: center;
+  }
+  span{
+    padding: 0px !important;
+    // padding-right: 7px !important;
+    font-size: 15px;
+  }
+}
+.load_more{
+  font-size: 21px;
+}
+.desktop_screen{
+  height: 261px;
+  }
+
+}

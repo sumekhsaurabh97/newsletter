@@ -1,24 +1,33 @@
 import React from "react";
-import SearchSharpIcon from "@mui/icons-material/SearchSharp";
-import MenuIcon from "@mui/icons-material/Menu";
+import Image from "next/image";
 import Link from "next/link";
 
 import styles from "./styles/header.module.scss";
 
 export default function Header() {
   return (
-    <header
-      className="mx-4 mt-2 d-flex justify-content-between"
-      style={{ height: "40px" }}
-    >
-      <Link href="/" style={{ textDecoration: "none" }}>
-        <p className={styles.header_left}>𝕹𝖊𝖜𝖘𝖑𝖊𝖙𝖙𝖊𝖗</p>
-      </Link>
-      {/* <p>ᑎEᗯᔕᒪETTEᖇ</p> */}
-      <div className={styles.header_right}>
-        <SearchSharpIcon style={{ cursor: "pointer" }} />
-        <MenuIcon className="ms-4" style={{ cursor: "pointer" }} />
-      </div>
-    </header>
+    <div className="container-fluid" style={{ backgroundColor: "#F9F6EF" }}>
+      <header className="container pt-4 d-flex justify-content-between">
+        <div className={styles.logo}>
+          <Image
+            src="/assets/images/logo.png"
+            width={59}
+            height={23}
+            alt="Pic of logo"
+          />
+          <span>Hero Curators</span>
+        </div>
+        <div className={styles.menu}>
+          <Link href="./menu">
+            <Image
+              src="/assets/images/menu.png"
+              width={28}
+              height={22}
+              alt="Pic of menu"
+            />
+          </Link>
+        </div>
+      </header>
+    </div>
   );
 }
