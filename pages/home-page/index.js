@@ -5,15 +5,15 @@ import { useState } from "react";
 
 import Header from "../../components/Header";
 import InputBtn from "../../components/InputBtn";
-import Term_conditions from "../../components/Terms&Conditions";
+import TermsConditions from "../../components/Terms-Conditions";
 import LinkSent from "../../components/LinkSent";
 
 import { Collections } from "../../components/Data/collectionData";
 import { reviews } from "../../components/Data/reviews";
 
-import styles from "./styles/Home_Page.module.scss";
+import styles from "./styles/homePage.module.scss";
 
-export default function Home_Page(props) {
+export default function HomePage(props) {
   const [linkSentPopup, setLinkSentPopup] = useState(true);
 
   function linkSentfunc(popup) {
@@ -55,9 +55,9 @@ export default function Home_Page(props) {
               Loved by smart folks everywhere
             </h1>
             <div className={`d-flex column-gap-5 ${styles.reviewed}`}>
-              {reviews.map((item, i) => {
+              {reviews.map((item, index) => {
                 return (
-                  <div className={styles.review_para}>
+                  <div className={styles.review_para} key={index}>
                     <p>{item.reviewers_thought}</p>
                     <p className="fw-bold text-end">{item.reviewers_name}</p>
                   </div>
@@ -79,31 +79,26 @@ export default function Home_Page(props) {
               <div
                 className={`d-flex flex-wrap justify-content-between text-center ${styles.collection_card}`}
               >
-                {Collections.map((item) => {
+                {Collections.map((item, index) => {
                   return (
-                    <>
-                      <div
-                        className={`${styles.collection_card_content}`}
-                        key={item.id}
-                      >
-                        <Link href={`/${item.page_name}`}>
-                          <Image
-                            src={item.src}
-                            width={100}
-                            height={100}
-                            alt="Pic of collection"
-                            className={styles.collection_img}
-                          />
-                          <p className={`mt-3 mb-3 ${styles.title}`}>
-                            {item.title}
-                          </p>
+                    <div className={`${styles.collection_card_content}`} key={index}>
+                      <Link href={`/${item.page_name}`}>
+                        <Image
+                          src={item.src}
+                          width={100}
+                          height={100}
+                          alt="Pic of collection"
+                          className={styles.collection_img}
+                        />
+                        <p className={`mt-3 mb-3 ${styles.title}`}>
+                          {item.title}
+                        </p>
 
-                          <p className={`mb-5 ${styles.summary}`}>
-                            {item.summary}
-                          </p>
-                        </Link>
-                      </div>
-                    </>
+                        <p className={`mb-5 ${styles.summary}`}>
+                          {item.summary}
+                        </p>
+                      </Link>
+                    </div>
                   );
                 })}
               </div>
@@ -207,7 +202,7 @@ export default function Home_Page(props) {
             className="container-fluid"
             style={{ backgroundColor: "#F9F6EF" }}
           >
-            <Term_conditions />
+            <TermsConditions />
           </div>
         </div>
       ) : (

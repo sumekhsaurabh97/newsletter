@@ -5,7 +5,7 @@ import Link from "next/link";
 import styles from "./styles/menu.module.scss";
 import { colors } from "@mui/material";
 
-export default function index() {
+export default function Menu() {
   return (
     <div
       className={` ${styles.menu}`}

@@ -8,9 +8,9 @@ import Link from "next/link";
 
 import Header from "../../components/Header";
 
-import styles from "./styles/refral.module.scss";
+import styles from "./styles/referral.module.scss"
 
-export default function index() {
+export default function Referral() {
   const [url, setUrl] = useState(null);
   const [count, setCount] = useState(0);
   const [remaining_time, setRemaining_time] = useState(0);

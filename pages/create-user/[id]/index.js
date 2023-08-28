@@ -3,12 +3,13 @@ import axios from "axios";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-import Header from "../../../components/Header";
+
+import Header from "../../../components/Header"
 import ThankYou from "../../../components/ThankYou";
 
 import styles from "./styles/create_user.module.scss";
 
-export default function create_user({ query }) {
+export default function UserCreate({ query }) {
   const router = useRouter();
   const id = router.query.id;
 

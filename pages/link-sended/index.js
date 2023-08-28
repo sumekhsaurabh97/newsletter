@@ -2,7 +2,7 @@ import React from 'react'
 
 import styles from "./styles/link-sended.module.scss"
 
-export default function index() {
+export default function LinkSended() {
   return (
     <div
       className={`d-flex justify-content-center align-items-center ${styles.magicLink_container}`}

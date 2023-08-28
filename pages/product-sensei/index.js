@@ -1,8 +1,8 @@
 import React from "react";
 
-import Card from "../../components/card";
+import Card from "../../components/Card"
 
-export default function index() {
+export default function ProductSensei() {
   return (
     <>
       <Card

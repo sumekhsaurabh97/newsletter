@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import Header from "../Header";
 import InputBtn from "../InputBtn";
-import Term_conditions from "../Terms&Conditions";
+import TermsConditions from "../Terms-Conditions";
 import LinkSent from "../LinkSent";
 
 import styles from "./styles/card.module.scss";
@@ -65,7 +65,7 @@ export default function Card(props) {
         <LinkSent />
       )}
       <div className="pt-5">
-        <Term_conditions />
+        <TermsConditions />
       </div>
     </div>
   );

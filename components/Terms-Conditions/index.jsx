@@ -1,9 +1,9 @@
 import React from "react";
 import Link from "next/link";
 
-import styles from "./styles/Terms&Conditions.module.scss";
+import styles from "./styles/termsConditions.module.scss";
 
-export default function Term_conditions() {
+export default function TermsConditions() {
   return (
     <>
       <div

@@ -9,7 +9,7 @@ export default function ThankYou() {
 
   useEffect(() => {
     setTimeout(() => {
-      router.push("/refral");
+      router.push("/referral");
     }, 3000);
   }, []);
   return (

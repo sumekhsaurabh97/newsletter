@@ -1,9 +1,10 @@
 import React from "react";
 
-import Card from "../../components/card";
+
+import Card from "../../components/Card";
 
 
-export default function index() {
+export default function CuratedClarity() {
   const users_pics = [
     "/assets/images/user_1.png",
     "/assets/images/user_2.png",
