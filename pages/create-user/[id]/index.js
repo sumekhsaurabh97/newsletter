@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 
 
-import Header from "../../../components/Header"
+import Nav from "../../../components/Nav"
 import ThankYou from "../../../components/ThankYou";
 
 import styles from "./styles/create_user.module.scss";
@@ -40,7 +40,7 @@ export default function UserCreate({ query }) {
 
   return (
     <>
-      <Header />
+      <Nav />
       <div
         className={`d-flex justify-content-center align-items-center ${styles.logIn_container}`}
       >

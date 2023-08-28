@@ -2,9 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import styles from "./styles/header.module.scss";
 
-export default function Header() {
+import styles from "./styles/nav.module.scss"
+
+export default function Nav() {
   return (
     <div className="container-fluid" style={{ backgroundColor: "#F9F6EF" }}>
       <header className="container pt-4 d-flex justify-content-between">

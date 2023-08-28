@@ -6,7 +6,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "next/link";
 
-import Header from "../../components/Header";
+import Nav from "../../components/Nav";
 
 import styles from "./styles/referral.module.scss"
 
@@ -54,7 +54,7 @@ export default function Referral() {
   };
   return (
     <>
-      <Header />
+      <Nav />
       <div className="container-fluid" style={{ backgroundColor: "#F9F6EF" }}>
         <div className="container pt-5">
           <div

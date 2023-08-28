@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 
-import Header from "../Header";
+import Nav from "../Nav";
 import InputBtn from "../InputBtn";
 import TermsConditions from "../Terms-Conditions";
 import LinkSent from "../LinkSent";
@@ -21,7 +21,7 @@ export default function Card(props) {
 
   return (
     <div className="container-fluid" style={{ backgroundColor: "#F9F6EF" }}>
-      <Header />
+      <Nav />
 
       {linkSentPopup ? (
         <div className={`container pt-5`}>
