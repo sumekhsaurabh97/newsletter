@@ -7,7 +7,8 @@ import InputBtn from "../InputBtn";
 import TermsConditions from "../Terms-Conditions";
 import LinkSent from "../LinkSent";
 
-import styles from "./styles/card.module.scss";
+
+import styles from "./styles/Card.module.scss"
 
 export default function Card(props) {
   const { collections_name, heading, title, summary, users_pic, btn_text } =
