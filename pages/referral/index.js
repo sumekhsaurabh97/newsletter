@@ -61,7 +61,7 @@ export default function Referral() {
             className={`d-flex justify-content-lg-between align-items-center py-3 px-4 ${styles.refral_container}`}
           >
             <div className={styles.remaining_days}>
-              <p className="m-0">This Month Referrals</p>
+              <p className="m-0">This Month Referralssssssssssssssss</p>
               <p className="py-1 m-0" style={{ color: "red" }}>
                 {`${remaining_time} Days remaining`}
               </p>
