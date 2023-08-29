@@ -1,5 +1,6 @@
 import Head from "next/head";
 import HomePage from "./home-page";
+import Refferal from "./referral"
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         ></link>
       </Head>
       <HomePage />
+      <Refferal/>
     </div>
   );
 }
