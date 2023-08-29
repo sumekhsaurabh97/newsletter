@@ -29,6 +29,16 @@
     border: none;
     border-radius: 5px;
   }
+
+  button:hover {
+    background-color: $color-orange;
+  }
+
+  button:active {
+    background-color: $color-orange;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 }
 .latest_issues_section {
   h3 {
