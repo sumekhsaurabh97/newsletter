@@ -21,7 +21,7 @@ export default function Card(props) {
   }
 
   return (
-    <div className="container-fluid mt-5 pt-5" style={{ backgroundColor: "#F9F6EF", }}>
+    <div className="container-fluid" style={{ backgroundColor: "#F9F6EF", }}>
       <Nav />
 
       {linkSentPopup ? (
