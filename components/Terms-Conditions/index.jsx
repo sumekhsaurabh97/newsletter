@@ -12,7 +12,7 @@ export default function TermsConditions() {
         <ul className={`d-flex list-unstyled flex-wrap ${styles.list}`}>
           <li className="pt-1">
             <Link
-              href=""
+              href="mailto: hello@herocurators.com"
               to="javascript:void(0)"
               onClick={() => (window.location = "hello@herocurators.com")}
             >
