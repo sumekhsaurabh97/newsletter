@@ -11,7 +11,7 @@ export default function Nav() {
       <header className="container pt-4 d-flex justify-content-between">
         <div className={styles.logo}>
           <Image
-            src="/assets/images/logo.png"
+            src="/assets/images/logo.svg"
             width={59}
             height={23}
             alt="Pic of logo"

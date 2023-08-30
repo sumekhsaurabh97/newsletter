@@ -6,12 +6,12 @@ import Card from "../../components/Card";
 
 export default function CuratedClarity() {
   const users_pics = [
-    "/assets/images/user_1.png",
-    "/assets/images/user_2.png",
-    "/assets/images/user_3.png",
-    "/assets/images/user_4.png",
-    "/assets/images/user_5.png",
-    "/assets/images/user_6.png",
+    "/assets/images/user_1.svg",
+    "/assets/images/user_2.svg",
+    "/assets/images/user_3.svg",
+    "/assets/images/user_4.svg",
+    "/assets/images/user_5.svg",
+    "/assets/images/user_6.svg",
   ];
   return (
     <>

@@ -87,7 +87,7 @@ export default function HomePage(props) {
                           src={item.src}
                           width={100}
                           height={100}
-                          alt="Pic of collection"
+                          alt={item.alt}
                           className={styles.collection_img}
                         />
                         <p className={`mt-3 mb-3 ${styles.title}`}>
@@ -115,66 +115,66 @@ export default function HomePage(props) {
                 className={`d-flex flex-wrap justify-content-center ${styles.leaders_icon}`}
               >
                 <Image
-                  src="/assets/images/affordable.png"
+                  src="/assets/images/affordable.svg"
                   width={120}
                   height={29}
-                  alt="Pic of collection"
+                  alt="affordable"
                   className="mt-5"
                 />
                 <Image
-                  src="/assets/images/cube.png"
+                  src="/assets/images/cube.svg"
                   width={99}
                   height={24}
-                  alt="Pic of collection"
+                  alt="cube"
                   className="mt-5"
                 />
                 <Image
-                  src="/assets/images/glevogue.png"
+                  src="/assets/images/glevogue.svg"
                   width={125}
                   height={30}
-                  alt="Pic of collection"
+                  alt="glevogue"
                   className="mt-5"
                 />
                 <Image
-                  src="/assets/images/coco.png"
+                  src="/assets/images/coco.svg"
                   width={97}
                   height={25}
-                  alt="Pic of collection"
+                  alt="coco"
                   className="mt-5"
                 />
                 <Image
-                  src="/assets/images/holistro.png"
+                  src="/assets/images/holistro.svg"
                   width={97}
                   height={24}
-                  alt="Pic of collection"
+                  alt="holistro"
                   className="mt-5"
                 />
                 <Image
-                  src="/assets/images/individualified.png"
+                  src="/assets/images/individualified.svg"
                   width={152}
                   height={30}
-                  alt="Pic of collection"
+                  alt="individualified"
                   className="mt-5"
                 />
                 <Image
-                  src="/assets/images/super_playbook.png"
+                  src="/assets/images/super_playbook.svg"
                   width={152}
                   height={30}
-                  alt="Pic of collection"
+                  alt="super_playbook"
                   className="mt-5"
                 />
                 <Image
-                  src="/assets/images/marketeeo.png"
+                  src="/assets/images/marketeeo.svg"
                   width={149}
                   height={20}
-                  alt="Pic of collection"
+                  alt="marketeeo"
                   className="mt-5"
                 />
                 <Image
-                  src="/assets/images/tashan.png"
+                  src="/assets/images/tashan.svg"
                   width={71}
                   height={30}
-                  alt="Pic of collection"
+                  alt="tashan"
                   className="mt-5"
                 />
               </div>
