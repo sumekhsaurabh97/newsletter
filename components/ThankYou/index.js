@@ -14,7 +14,7 @@ export default function ThankYou() {
   }, []);
   return (
     <div
-      className={`d-flex justify-content-center align-items-center py-4 px-3`}
+      className={`container-fluid d-flex justify-content-center align-items-center py-4 px-3 ${styles.final_submition_card_container}`}
     >
       <div className={`py-5 px-4 ${styles.final_submition_card}`}>
         <p>
