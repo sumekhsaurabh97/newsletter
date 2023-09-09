@@ -58,7 +58,7 @@ export default function Referral() {
       <div className="container-fluid" style={{ backgroundColor: "#F9F6EF" }}>
         <div className="container pt-5">
           <div
-            className={`d-flex justify-content-lg-between align-items-center py-3 px-4 ${styles.refral_container}`}
+            className={`d-flex justify-content-lg-between align-items-center py-3 px-4 mt-5 ${styles.refral_container}`}
           >
             <div className={styles.remaining_days}>
               <p className="m-0">This Month Referral</p>

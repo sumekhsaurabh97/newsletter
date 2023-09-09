@@ -3,8 +3,7 @@ import axios from "axios";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
-
-import Nav from "../../../components/Nav"
+import Nav from "../../../components/Nav";
 import ThankYou from "../../../components/ThankYou";
 
 import styles from "./styles/create_user.module.scss";
@@ -45,7 +44,7 @@ export default function UserCreate({ query }) {
         className={`d-flex justify-content-center align-items-center ${styles.logIn_container}`}
       >
         {form ? (
-          <div className={`py-5 ps-4 pe-5 m-3 mt-5 ${styles.logIn_card}`}>
+          <div className={`py-5 ps-4 pe-5  ${styles.logIn_card}`}>
             <p>
               🎈 Congratulations on joining the exclusive club of verified email
               warriors!

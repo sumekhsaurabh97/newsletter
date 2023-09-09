@@ -79,6 +79,10 @@
   width: 82%;
   padding-bottom: 100px !important;
 }
+.engage_inputBtn{
+width: 80%;
+margin: auto;
+}
 
 @media (min-width: $mobile) and (max-width: $tablet) {
   .hero_section{
@@ -92,6 +96,9 @@
   }
   .engage {
     width: 100%;
+  }
+  .engage_inputBtn{
+    width: 90%;
   }
 }
 
@@ -165,4 +172,7 @@
   .engage {
     width: 100%;
   }
+  .engage_inputBtn{
+    width: 100%;
+    }
 }

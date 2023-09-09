@@ -28,7 +28,7 @@ export default function HomePage(props) {
             className="container-fluid pt-5 pb-5"
             style={{ backgroundColor: "#F9F6EF" }}
           >
-            <div className={`container text-center ${styles.hero_section}`}>
+            <div className={`container text-center mt-5 ${styles.hero_section}`}>
               <h1 className={styles.heading_style}>
                 Unlock your potential with our handpicked newsletters!
               </h1>
@@ -191,11 +191,13 @@ export default function HomePage(props) {
                 Engage, Elevate, Excel: Unleash the Power of Curated Newsletters
                 with Hero Curators
               </h5>
-              <InputBtn
+            <div className={styles.engage_inputBtn}>
+            <InputBtn
                 btn_text="Subscriber Now"
                 linkSendedfunc={linkSentfunc}
                 collections_name={null}
               />
+            </div>
             </div>
           </div>
           <div

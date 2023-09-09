@@ -2,13 +2,13 @@
 @import "../../../../styles/breakpoints";
 
 .logIn_container {
-  height: 100vh;
   background-color: #f9f6ef;
 }
 .logIn_card {
   width: 463px;
   background-color: white;
   border-radius: 7px;
+  margin: 120px 0px 50px 0px;
   p {
     font-size: 19px;
     line-height: 30px;
@@ -45,7 +45,8 @@
 }
 @media (min-width: 280px) and (max-width: $mobile-small) {
   .logIn_card {
-    padding-right: 10px !important;
+    margin-right: 10px;
+    margin-left: 10px;
     p {
       font-size: 17px;
       line-height: 25px;

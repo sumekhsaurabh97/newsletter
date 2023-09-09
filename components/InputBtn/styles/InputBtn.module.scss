@@ -3,13 +3,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Domine:wght@400;500&family=Hepta+Slab&family=McLaren&family=Merriweather:ital,wght@0,400;1,400;1,900&family=PT+Sans&family=PT+Sans+Caption:wght@700&family=Poppins:ital,wght@0,100;0,200;0,500;1,100&family=Roboto:ital,wght@0,300;1,900&display=swap");
 
 .input_box {
-  border: 2px solid #5e5e5e;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 5px 6rem 5px 1rem;
+  width: 51%;
+  height: 60px;
+  border: 2px solid #5E5E5E
 }
 .input_box::placeholder {
   color: #d7d7d7;
-  font-size: 19px !important;
+  font-size: 22px !important;
   font-weight: 400;
 }
 .btn_style {
@@ -18,9 +20,11 @@
   border: none;
   border-radius: 10px;
   color: $color-white;
-  font-size: 19px;
+  font-size: 22px;
   font-weight: 400;
   margin-left: 14px;
+  width: 46%;
+  height: 60px;
 }
 
 @media (min-width: $mobile-small) and (max-width: $mobile) {
@@ -33,15 +37,19 @@
 }
 @media (min-width: 280px) and (max-width: $mobile-small) {
   .input_box {
-    width: 70%;
+    width: 80%;
     padding: 5px;
+    height: 45px;
   }
   .btn_style {
     padding: 5px 1rem 5px 1rem;
-    width: 70%;
+    width: 80%;
     margin: 14px 0px 0px 0px;
+    font-size: 17px;
+    height: 45px;
   }
   .input_box::placeholder {
     font-size: 17px !important;
+
   }
 }

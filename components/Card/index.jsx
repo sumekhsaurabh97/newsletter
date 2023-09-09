@@ -7,8 +7,7 @@ import InputBtn from "../InputBtn";
 import TermsConditions from "../Terms-Conditions";
 import LinkSent from "../LinkSent";
 
-
-import styles from "./styles/Card.module.scss"
+import styles from "./styles/Card.module.scss";
 
 export default function Card(props) {
   const { collections_name, heading, title, summary, users_pic, btn_text } =
@@ -21,14 +20,17 @@ export default function Card(props) {
   }
 
   return (
-    <div className="container-fluid" style={{ backgroundColor: "#F9F6EF",paddingBottom :'70px' }}>
+    <div
+      className="container-fluid"
+      style={{ backgroundColor: "#F9F6EF", paddingBottom: "70px" }}
+    >
       <Nav />
 
       {linkSentPopup ? (
         <div className={`container pt-5`}>
-          <div className={`ps-4 ${styles.card_content}`}>
+          <div className={`ps-4 ${styles.card_content} pt-5`}>
             <h1
-              className={`${styles.collections_name}`}
+              className={`${styles.collections_name} pt-2`}
               style={{ marginBottom: "0px" }}
             >
               {collections_name}

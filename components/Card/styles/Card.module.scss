@@ -33,10 +33,14 @@
   position: relative;
   height: 70px;
 }
-
+@media (min-width: $tablet) and (max-width: $desktop) {
+  .card_content {
+    width: 75%;
+  }
+}
 @media (min-width: $mobile) and (max-width: $tablet) {
   .card_content {
-    width: 90%;
+    width: 100%;
   }
 }
 @media (min-width: $mobile-small) and (max-width: $mobile) {
