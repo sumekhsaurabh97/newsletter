@@ -10,7 +10,7 @@ import LinkSent from "../LinkSent";
 import styles from "./styles/Card.module.scss";
 
 export default function Card(props) {
-  const { collections_name, heading, title, summary, users_pic, btn_text } =
+  const { collections_name, heading, title, summary, users_pic, btn_text,cardHeight } =
     props;
 
   const [linkSentPopup, setLinkSentPopup] = useState(true);
@@ -21,8 +21,8 @@ export default function Card(props) {
 
   return (
     <div
-      className="container-fluid"
-      style={{ backgroundColor: "#F9F6EF", paddingBottom: "70px" }}
+      className={`container-fluid ${styles.card_wrapper}`}
+      style={cardHeight}
     >
       <Nav />
 

@@ -13,6 +13,7 @@ export default function ProductSensei() {
         delivering valuable insights, tips, and industry trends straight to your inbox."
         btn_text="Notify Me"
         summary="Be the first to know about the awesome newsletter, we are launching very shortly"
+        cardHeight={{height :'100vh'}}
       />
     </>
   );

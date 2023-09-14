@@ -13,6 +13,7 @@ export default function designWise() {
         – delivering the content we've always craved"
         btn_text="Notify Me"
         summary="Be the first to know about the awesome newsletter, we are launching very shortly"
+        cardHeight={{height :'100vh'}}
       />
     </>
   );
