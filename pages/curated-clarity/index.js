@@ -23,8 +23,8 @@ export default function CuratedClarity() {
             to retention, from growth to revenue"
             btn_text ="1324+ Subscribers"
         summary="Every Friday, we summarize one best strategies from the top companies Join 1324+ founders discovering best strategies to grow their SaaS business"
-        
         users_pic= {users_pics}
+        
       />
     </>
   );

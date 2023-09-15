@@ -5,12 +5,17 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
-import Nav from "../../components/Nav";
+import Nav from "../../../components/Nav";
 
-import styles from "./styles/referral.module.scss"
+import styles from "./styles/referral.module.scss";
 
 export default function Referral() {
+  const router = useRouter();
+  const user_id = router.query.id;
+
+
   const [url, setUrl] = useState(null);
   const [count, setCount] = useState(0);
   const [remaining_time, setRemaining_time] = useState(0);
